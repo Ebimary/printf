@@ -70,12 +70,12 @@ int write_number(int is_negative, int ind, char buffer[],
 		extra_ch = '-';
 	else if (flags & F_PLUS)
 		extra_ch = '+';
-	else if (flags & F_SPACE
-			extra_ch = ' ';
+	else if (flags & F_SPACE)
+		extra_ch = ' ';
 
 			return (write_num(ind, buffer, flags, width, precision,
 					length, padd, extra_ch));
-			}
+}
 
 			/**
 			 * write_num - Write a number using a bufffer
